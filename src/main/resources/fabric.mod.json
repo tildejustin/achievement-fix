@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "achievement-fix",
   "version": "${version}",
-  "name": "",
-  "description": "",
+  "name": "Achievement Fix",
+  "description": "Fix broken achievements on various versions",
   "authors": [
     "tildejustin"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/modid",
-    "sources": "https://github.com/tildejustin/modid",
-    "issues": "https://github.com/tildejustin/modid/issues"
+    "homepage": "https://modrinth.com/mod/achievement-fix",
+    "sources": "https://github.com/tildejustin/achievement-fix",
+    "issues": "https://github.com/tildejustin/achievement-fix/issues"
   },
   "license": "MPL-2.0",
   "environment": "*",
   "mixins": [
-    "modid.mixins.json"
+    "achievement-fix.mixins.json"
   ],
   "depends": {
     "minecraft": "*",

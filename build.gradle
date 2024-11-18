@@ -22,13 +22,13 @@ loom {
             options.putAll(["mark-corresponding-synthetics": "1", "indent-string": "    "])
         }
     }
-    mixin {
-        useLegacyMixinAp = false
-    }
+    // mixin {
+    //     useLegacyMixinAp = false
+    // }
     // legacyLooming {
     //     intermediaryVersion = 1
     // }
-    // runs.client.programArgs "--userProperties", "{}"
+    runs.client.programArgs "--userProperties", "{}"
 }
 
 dependencies {
