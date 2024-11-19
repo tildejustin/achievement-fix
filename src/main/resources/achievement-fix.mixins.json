@@ -3,7 +3,8 @@
   "package": "dev.tildejustin.achievement_fix.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ServerPlayerEntityMixin"
+    "EntityDamageSourceMixin",
+    "ProjectileDamageSourceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

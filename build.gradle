@@ -1,6 +1,6 @@
 plugins {
     alias libs.plugins.fabric.loom
-    alias libs.plugins.legacy.looming
+    alias libs.plugins.ploceus
     id "maven-publish"
 }
 
@@ -25,15 +25,20 @@ loom {
     // mixin {
     //     useLegacyMixinAp = false
     // }
-    // legacyLooming {
-    //     intermediaryVersion = 1
-    // }
     runs.client.programArgs "--userProperties", "{}"
+    clientOnlyMinecraftJar()
+}
+
+ploceus {
+    clientOnlyMappings()
 }
 
 dependencies {
     minecraft libs.minecraft
-    mappings legacy.yarn(libs.versions.minecraft.get(), libs.versions.yarn.build.get())
+    mappings ploceus.featherMappings(libs.versions.feather.build.get())
+    nests ploceus.nests(libs.versions.nests.build.get())
+    // exceptions project.ploceus.raven(libs.versions.raven.build.get())
+    // signatures project.ploceus.sparrow(libs.versions.sparrow.build.get())
     modImplementation libs.fabric.loader
     vineflowerDecompilerClasspath libs.vineflower
 }

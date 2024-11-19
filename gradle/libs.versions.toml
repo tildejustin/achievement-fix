@@ -1,9 +1,12 @@
 [versions]
-minecraft = "1.7.10"
-yarn_build = "551"
+minecraft = "1.0.0"
+feather_build = "23"
+nests_build = "11"
+#raven_build = "1"
+#sparrow_build = "1"
 fabric_loader = "0.16.9"
 loom = "1.8-SNAPSHOT"
-legacy-looming = "1.8-SNAPSHOT"
+ploceus = "1.8-SNAPSHOT"
 vineflower = "1.10.1"
 
 [libraries]
@@ -13,4 +16,4 @@ vineflower = { module = "org.vineflower:vineflower", version.ref = "vineflower" 
 
 [plugins]
 fabric_loom = { id = "fabric-loom", version.ref = "loom" }
-legacy_looming = { id = "legacy-looming", version.ref = "legacy-looming" }
+ploceus = { id = "ploceus", version.ref = "ploceus" }

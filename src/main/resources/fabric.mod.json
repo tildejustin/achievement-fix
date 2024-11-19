@@ -20,5 +20,12 @@
   "depends": {
     "minecraft": "*",
     "fabricloader": ">=0.15.0"
+  },
+  "custom": {
+    "loom:injected_interfaces": {
+      "net/minecraft/unmapped/C_2950542": [
+        "dev/tildejustin/achievement_fix/EntityDamageSourceAccessor"
+      ]
+    }
   }
 }
