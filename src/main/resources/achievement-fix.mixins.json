@@ -3,7 +3,9 @@
   "package": "dev.tildejustin.achievement_fix.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ServerPlayerEntityMixin"
+    "CriteriaMixin",
+    "HusbandryTabAdvancementGeneratorMixin",
+    "accessor.ItemDurabilityChangedCriterion$ConditionsAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

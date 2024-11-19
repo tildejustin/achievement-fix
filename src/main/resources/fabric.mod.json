@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "achievement-fix",
   "version": "${version}",
-  "name": "Achievement Fix",
+  "name": "Advancement Fix",
   "description": "Fix broken achievements on various versions",
   "authors": [
     "tildejustin"
