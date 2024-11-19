@@ -1,11 +1,12 @@
 package dev.tildejustin.achievement_fix.mixin.accessor;
 
-import net.minecraft.*;
+import net.minecraft.advancement.criterion.ItemDurabilityChangedCriterion;
+import net.minecraft.predicate.NumberRange;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-@Mixin(class_3197.class_3557.class)
+@Mixin(ItemDurabilityChangedCriterion.Conditions.class)
 public interface ItemDurabilityChangedCriterion$ConditionsAccessor {
-    @Accessor("field_17378")
-    void setDurability(class_3638.class_3642 durability);
+    @Accessor("durability")
+    void setDurability(NumberRange.IntRange durability);
 }

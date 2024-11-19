@@ -25,9 +25,9 @@ loom {
     // mixin {
     //     useLegacyMixinAp = false
     // }
-    // legacyLooming {
-    //     intermediaryVersion = 1
-    // }
+    legacyLooming {
+        intermediaryVersion = 2
+    }
     runs.client.programArgs "--userProperties", "{}"
 }
 
